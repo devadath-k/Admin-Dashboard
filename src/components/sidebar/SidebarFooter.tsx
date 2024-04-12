@@ -35,7 +35,7 @@ export default function SidebarFooter() {
   return (
     <div>
       <hr className='mt-[50px]' />
-      <ul className="pt-[10px] flex flex-col gap-2">
+      <ul className="pt-[10px] flex flex-col gap-1">
         {FooterItems(footerList)}
     </ul>
     </div>

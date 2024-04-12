@@ -55,7 +55,7 @@ export default function SidebarBody() {
   return (
     <div>
         {
-            <ul className="pt-[10px] flex flex-col gap-2">
+            <ul className="pt-[10px] flex flex-col gap-1">
                 {BarItems(barList)}
             </ul>
         }
