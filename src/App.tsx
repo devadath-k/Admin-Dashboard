@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
+import Main from './components/Main';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <SideBar/>
         <div className='w-[100%] p-[20px]'>
           <NavBar/>
+          <Main/>
         </div>
       </div>
       
