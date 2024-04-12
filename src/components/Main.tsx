@@ -29,7 +29,7 @@ export default function Main() {
 
             </div>
       </div>
-      <div className='mt-[20px] w-[100%] max-h-[500px] bg-white rounded-[10px] p-[10px] overflow-y-auto'>
+      <div className='mt-[20px] w-[100%] max-h-[500px] bg-white rounded-[10px] p-[10px] overflow-auto'>
         <DataTable/>
       </div>
     </div>

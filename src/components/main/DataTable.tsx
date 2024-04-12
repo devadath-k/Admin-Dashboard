@@ -1,32 +1,51 @@
-import React from 'react'
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeaderCell,
+    TableRow,
+  } from '@tremor/react';
+  
+
 
 export default function DataTable() {
   return (
-    <table className="table-auto">
-  <thead>
-    <tr>
-      <th>Song</th>
-      <th>Artist</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-      <td>Malcolm Lockyer</td>
-      <td>1961</td>
-    </tr>
-    <tr>
-      <td>Witchy Woman</td>
-      <td>The Eagles</td>
-      <td>1972</td>
-    </tr>
-    <tr>
-      <td>Shining Star</td>
-      <td>Earth, Wind, and Fire</td>
-      <td>1975</td>
-    </tr>
-  </tbody>
-</table>
+    <div className="mx-auto max-w-[100%]">
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableHeaderCell>Name</TableHeaderCell>
+          <TableHeaderCell className="text-right">
+            Monsters Slayed
+          </TableHeaderCell>
+          <TableHeaderCell>Region</TableHeaderCell>
+          <TableHeaderCell>Status</TableHeaderCell>
+        </TableRow>
+      </TableHead>
+
+      <TableBody>
+        <TableRow>
+          <TableCell>Wilhelm Tell</TableCell>
+          <TableCell className="text-right">1</TableCell>
+          <TableCell>Uri, Schwyz, Unterwalden</TableCell>
+          <TableCell>National Hero</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>The Witcher</TableCell>
+          <TableCell className="text-right">129</TableCell>
+          <TableCell>Kaedwen</TableCell>
+          <TableCell>Legend</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>Mizutsune</TableCell>
+          <TableCell className="text-right">82</TableCell>
+          <TableCell>Japan</TableCell>
+          <TableCell>N/A</TableCell>
+        </TableRow>
+      </TableBody>
+    </Table>
+  </div>
+
   )
 }
