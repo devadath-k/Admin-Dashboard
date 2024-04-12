@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+}
+
+.bar{
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
+}
+
+.navItem{
+  border:2px solid gray;
+}
